@@ -1,0 +1,70 @@
+{
+  "cli": {
+    "version": ">= 9.0.3"
+  },
+  "build": {
+    "development": {
+      "autoIncrement": true,
+      "developmentClient": true,
+      "distribution": "internal",
+      "android": {
+        "image": "latest"
+      },
+      "ios": {
+        "image": "latest"
+      },
+      "channel": "development",
+      "env": {
+        "API_BASE_URL": "https://maisonaxcess.com/api",
+        "SP_KEY":"pk_test_51OgjHMSGJh91kjRpMOEaBkoQv3UOmFU09WxBJZVBc6jtMeE76qmD4soM079S4odtrklGOfVvJxdbv04JxB3yBOpA00NWP70dWe",
+        "SECRET_KEY":"sk_test_51PMN9f03dsvurDQtZy7hpH6HRIhAaHZFm7dZtAAnAW19cEY66HrqUQPUPx2tWSwzfV2GjjvnbRRNZOKo4lJgjnnj00JUpkNAkB"
+      }
+    },
+    "preview": {  
+      "autoIncrement": true,
+      "distribution": "internal",
+      "channel": "preview",
+      "android": {
+        "image": "latest",
+        "buildType": "apk"
+      },
+      "ios": {
+        "image": "latest",
+        "simulator": true
+      },
+      "env": {
+        "API_BASE_URL": "https://maisonaxcess.com/api",
+        "SP_KEY":"pk_test_51OgjHMSGJh91kjRpMOEaBkoQv3UOmFU09WxBJZVBc6jtMeE76qmD4soM079S4odtrklGOfVvJxdbv04JxB3yBOpA00NWP70dWe",
+        "SECRET_KEY":"sk_test_51PMN9f03dsvurDQtZy7hpH6HRIhAaHZFm7dZtAAnAW19cEY66HrqUQPUPx2tWSwzfV2GjjvnbRRNZOKo4lJgjnnj00JUpkNAkB"
+      }
+    },
+    "preview2": {
+      "android": {
+        "gradleCommand": ":app:assembleRelease"
+      }
+    },
+    "preview3": {
+      "developmentClient": true
+    },
+    "production": {
+      "autoIncrement": true,
+      "channel": "production",
+      "android": {
+        "image": "latest"
+      },
+      "ios": {
+        "image": "latest"
+      },
+      "env": {
+        "API_BASE_URL": "https://maisonaxcess.com/api",
+        "SP_KEY":"pk_test_51OgjHMSGJh91kjRpMOEaBkoQv3UOmFU09WxBJZVBc6jtMeE76qmD4soM079S4odtrklGOfVvJxdbv04JxB3yBOpA00NWP70dWe",
+        "SECRET_KEY":"sk_test_51PMN9f03dsvurDQtZy7hpH6HRIhAaHZFm7dZtAAnAW19cEY66HrqUQPUPx2tWSwzfV2GjjvnbRRNZOKo4lJgjnnj00JUpkNAkB"
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      
+    }
+  }
+}
